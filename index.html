@@ -515,6 +515,85 @@ a{text-decoration:none;color:inherit}
     font-size:2.2rem;
   }
 }
+  @media (max-width: 650px) {
+  .editorial-grid {
+    display: block;
+  }
+
+  .editorial-kicker {
+    display: none;
+  }
+
+  .editorial-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .big-photo {
+    min-height: 520px;
+    height: 520px;
+  }
+
+  .article-card {
+    min-height: auto;
+    height: auto;
+    padding: 28px;
+  }
+
+  .article-card h2 {
+    font-size: clamp(3.4rem, 16vw, 5.2rem);
+    line-height: .82;
+  }
+
+  .lookbook-head {
+    display: block;
+  }
+
+  .lookbook-head h2 {
+    font-size: clamp(4rem, 20vw, 6.5rem);
+    margin-bottom: 22px;
+  }
+
+  .lookbook-head p {
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: left;
+  }
+
+  .masonry {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .look.mid {
+    margin-top: 0 !important;
+  }
+
+  .footer {
+    justify-content: center;
+    text-align: center;
+    padding: 36px 20px;
+    line-height: 1.8;
+  }
+
+  .footer span {
+    width: 100%;
+  }
+
+  .footer span:nth-child(3) {
+    display: none;
+  }
+
+  .footer::after {
+    content: "© 2026 Majda Kapetanović. All rights reserved.";
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    color: #6d6258;
+  }
+}
 </style>
 </head>
 
